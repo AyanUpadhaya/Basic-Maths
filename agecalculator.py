@@ -13,7 +13,7 @@ current_day=int(data[2])
 
 thirty_first_days_month=[1,3,5,7,8,10,12]
 thirty_days_month=[9,4,6,11]
-twenty_days_month=[2]
+twenty_eight_days_month=[2]
 
 
 def ageCalCulator(year,month,day):
@@ -47,7 +47,7 @@ def ageCalCulator(year,month,day):
 			total_day=(current_day+30)-day
 		if month in thirty_first_days_month:
 			total_day=(current_day+31)-day
-		if month in twenty_days_month:
+		if month in twenty_eight_days_month:
 			total_day=(current_day+30)-day
 		print(f"you are {total_year} years {total_month} months and {total_day} days old")
 
@@ -68,7 +68,7 @@ def ageCalCulator(year,month,day):
 			total_day=(current_day+30)-day
 		if month in thirty_first_days_month:
 			total_day=(current_day+31)-day
-		if month in twenty_days_month:
+		if month in twenty_eight_days_month:
 			total_day=(current_day+30)-day
 		
 		print(f"you are {total_year} years {total_month} months and {total_day} days old")
