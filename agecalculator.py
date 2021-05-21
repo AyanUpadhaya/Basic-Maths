@@ -72,6 +72,14 @@ def ageCalCulator(year,month,day):
 			total_day=(current_day+30)-day
 		
 		print(f"you are {total_year} years {total_month} months and {total_day} days old")
+
+	#if year less than current year and month is greater than current month and day is less than current day
+	if (year<current_year and month>current_month and day<current_day and month<=12):
+		total_year=(current_year-year)-1
+		total_month=(current_month+12)-(month+1)
+		total_day=(current_day-day)-1
+		print(f"you are {total_year} years {total_month} months and {total_day} days old")
+
 	
 	if month>12 or day >31:
 	    print("Wrong Data input")			
